@@ -42,9 +42,10 @@ struct tshirt * add_to_inventory(struct tshirt *inventory) {
     scanf("%lf %d", &tempPrice,&tempQuan);
     printf("%lf %d",tempPrice,tempQuan);
 
-    struct tshirt *new_shirt;
+    //struct tshirt *new_shirt;
+
     //Set input values as shirt attributes
-    new_shirt = malloc(sizeof(struct tshirt));
+    struct tshirt *new_shirt = (struct tshirt*)malloc(sizeof(struct tshirt));
     strcpy(new_shirt->org_name, tempName);
     strcpy(new_shirt->size, tempSize);
     new_shirt->price = tempPrice;
