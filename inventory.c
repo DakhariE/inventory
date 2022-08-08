@@ -10,10 +10,10 @@ int main() {
 
 	help();
 	printf("\n");
-
 	for (;;) {
 		// read operation code
-		printf("Enter operation code: ");
+		printf("'h' for help");
+		printf("\nEnter operation code: ");
 		scanf(" %c", &code);
 		while(getchar() != '\n') // skips to end of line
 			;
@@ -31,6 +31,9 @@ int main() {
 				break;
 			case 's':
 				search_by_size(inventory);
+				break;
+			case 'c':
+				change_quan(inventory);
 				break;
 			case 'p':
 				print_inventory(inventory);

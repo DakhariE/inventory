@@ -26,7 +26,7 @@ void search_by_organization(struct tshirt *inventory);
 void search_by_size(struct tshirt *inventory);
 void print_inventory(struct tshirt *inventory);
 void clear_inventory(struct tshirt *inventory);
+void change_quan(struct tshirt *inventory);
 void help();
 
 #endif
-
