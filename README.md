@@ -1,0 +1,1 @@
+This project is supposed to represent an inventory of a store/organization. It was mainly created for clothing inventory, but can be expanded to anything. The code is written in C and uses concepts such as modularity, linked lists, objects (structs), and utilization of source/header files in C.  
